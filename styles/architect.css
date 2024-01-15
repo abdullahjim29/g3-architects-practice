@@ -70,7 +70,7 @@ nav li a {
 }
 
 /* main style */
-main{
+main,.fact-section{
     max-width: 80%;
     margin: 70px auto;
 }
@@ -112,6 +112,7 @@ main{
     color: #727272;
     font-weight: 400;
     width:400px;
+    font-size: 0.9em;
 }
 
 /* responsive media queries for small devices */
@@ -160,4 +161,16 @@ main{
     .banner-image{
         width: 100%;
     }
+}
+
+/* fact section style */
+.fact-title{
+    color:#131313;
+    font-size: 2em;
+}
+
+.fact-description{
+    color: #727272;
+    font-weight: 400;
+    font-size: 0.9em;
 }
