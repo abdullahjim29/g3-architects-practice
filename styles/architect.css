@@ -12,7 +12,7 @@
   background: #ff900e;
   color: #fff;
   font-weight: 600;
-  font-size: 1.20em;
+  font-size: 1.2em;
   border: 0;
   padding: 20px 25px;
   margin: 30px 0;
@@ -70,107 +70,133 @@ nav li a {
 }
 
 /* main style */
-main,.fact-section{
-    max-width: 80%;
-    margin: 70px auto;
+main,
+.fact-section {
+  max-width: 80%;
+  margin: 70px auto;
 }
 /* teams style */
-.teams-container{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 85%;
-    gap:30px;
-  
+.teams-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 85%;
+  gap: 30px;
 }
-.teams-images{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:1.5rem;
-    
+.teams-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
-.teams-images img{
-   width: 280px;
+.teams-images img {
+  width: 280px;
 }
 
-.teams-title .quick-list{
-    color:#727272;
-    font-weight: 500;
-    font-size: 2.5rem;
+.teams-title .quick-list {
+  color: #727272;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
-.teams-title .of-our{
-    color:#131313;
-    font-weight: 700;
-    font-size: 2.5rem;
+.teams-title .of-our {
+  color: #131313;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
-.teams-title .text-features{
-    color: #FF900E;
-    font-weight: 700;
-    font-size: 2.5rem;
+.teams-title .text-features {
+  color: #ff900e;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
-.teams-description{
-    color: #727272;
-    font-weight: 400;
-    width:400px;
-    font-size: 0.9em;
-}
-
-/* responsive media queries for small devices */
-@media screen and (max-width:576px) {
-    header{
-        padding: 20px;
-        width: 90%;
-    }
-    nav{
-        flex-direction: column;
-    }
-    .teams-container{
-        flex-direction: column-reverse;
-        width: 80%;
-    }
-    .teams-images{
-        grid-template-columns: 1fr;
-    }
-    .teams-images img{
-        width: 100%;
-    }
-    .teams-content{
-        margin: 0 auto;
-        padding-right: 10px;
-    }
-    .teams-description{
-        width: 80%;
-    }
-}
-
-/* responsive media queries for medium devices */
-@media screen and (min-width:576px) and (max-width:960px) {
-    nav{
-        flex-direction: column;        
-    }
-    header{
-        padding: 30px;
-    }
-   
-}
-/* responsive media queries for extra medium devices */
-@media screen and (min-width:960px) and (max-width:1092px) {
-    nav{
-        flex-direction: column;
-    }
-    .banner-image{
-        width: 100%;
-    }
+.teams-description {
+  color: #727272;
+  font-weight: 400;
+  width: 400px;
+  font-size: 0.9em;
 }
 
 /* fact section style */
-.fact-title{
-    color:#131313;
-    font-size: 2em;
+.fact-title {
+  color: #131313;
+  font-size: 2em;
 }
 
-.fact-description{
+.fact-description {
+  color: #727272;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.fact-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding:30px;
+}
+
+.fact-card-container .card-title{
+    font-weight: 600;
     color: #727272;
-    font-weight: 400;
-    font-size: 0.9em;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.fact-card-container .card-stats{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+/* responsive media queries for small devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+    width: 90%;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .teams-container {
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+  .teams-images {
+    grid-template-columns: 1fr;
+  }
+  .teams-images img {
+    width: 100%;
+  }
+  .teams-content {
+    margin: 0 auto;
+    padding-right: 10px;
+  }
+  .teams-description {
+    width: 80%;
+  }
+}
+
+/* responsive media queries for medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+  }
+  header {
+    padding: 30px;
+  }
+}
+/* responsive media queries for extra medium devices */
+@media screen and (min-width: 960px) and (max-width: 1092px) {
+  nav {
+    flex-direction: column;
+  }
+  .banner-image {
+    width: 100%;
+  }
 }
