@@ -69,13 +69,76 @@ nav li a {
   width: 100%;
 }
 
+/* main style */
+main{
+    max-width: 80%;
+    margin: 70px auto;
+}
+/* teams style */
+.teams-container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 85%;
+    gap:30px;
+  
+}
+.teams-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.5rem;
+    
+}
+.teams-images img{
+   width: 280px;
+}
+
+.teams-title .quick-list{
+    color:#727272;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.teams-title .of-our{
+    color:#131313;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.teams-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.teams-description{
+    color: #727272;
+    font-weight: 400;
+    width:400px;
+}
+
 /* responsive media queries for small devices */
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
+        width: 90%;
     }
     nav{
         flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column-reverse;
+        width: 80%;
+    }
+    .teams-images{
+        grid-template-columns: 1fr;
+    }
+    .teams-images img{
+        width: 100%;
+    }
+    .teams-content{
+        margin: 0 auto;
+        padding-right: 10px;
+    }
+    .teams-description{
+        width: 80%;
     }
 }
 
@@ -97,44 +160,4 @@ nav li a {
     .banner-image{
         width: 100%;
     }
-}
-
-/* main style */
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-/* teams style */
-.teams-container{
-    display: flex;
-    align-items: center;
-}
-.teams-images{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:1.5rem;
-}
-.teams-content{
-    padding-left: 70px;
-    padding-right: 70px;
-}
-.teams-title .quick-list{
-    color:#727272;
-    font-weight: 500;
-    font-size: 2.5rem;
-}
-.teams-title .of-our{
-    color:#131313;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-.teams-title .text-features{
-    color: #FF900E;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-.teams-description{
-    color: #727272;
-    font-weight: 400;
-    font-size: 1.5rem;
 }
